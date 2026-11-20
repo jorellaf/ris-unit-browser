@@ -1,0 +1,15 @@
+services:
+  ris-unit-browser:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    init: true
+
+    volumes:
+      - ..:/workspace:cached
+
+    env_file:
+      - local.env
+
+    user: vscode

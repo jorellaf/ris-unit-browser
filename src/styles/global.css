@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Cinzel;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: NotoSerif;
+  font-style: oblique 0deg 10deg;
+  font-weight: 100 900;
+  src: url('/fonts/NotoSerif-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: NotoSerif;
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('/fonts/NotoSerif-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+@theme {
+  --font-serif: NotoSerif, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-cinzel: Cinzel, var(--font-serif);
+  --default-font-family: var(--font-serif);
+  --color-tyrian-purple: #67033d;
+}
+
+@layer base {
+  body {
+    padding-left: calc(100vw - 100%);
+    background-color: var(--color-tyrian-purple);
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 200%;
+    margin-bottom: 0.8em;
+    line-height: 130%;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 175%;
+    margin-bottom: 0.75em;
+    line-height: 120%;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 150%;
+    margin-bottom: 0.7em;
+    line-height: 110%;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 125%;
+    margin-bottom: 0.7em;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: 110%;
+    margin-bottom: 0.7em;
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: 105%;
+    margin-bottom: 0.7em;
+  }
+
+  hr {
+    border-color: #aaa;
+  }
+
+  a {
+    text-decoration-line: underline;
+  }
+
+  @-moz-document url-prefix() {
+    select:focus {
+      background-color: white;
+    }
+  }
+
+  .tapered-hr {
+    /*
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <defs>
+        <radialGradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+          <stop offset="75%" stop-color="black" />
+          <stop offset="100%" stop-color="black" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <defs>
+        <radialGradient id="grad2" cx="50%" cy="40%" r="90%" fx="50%" fy="50%">
+          <stop offset="0%" stop-color="saddlebrown" />
+          <stop offset="100%" stop-color="black" />
+        </radialGradient>
+      </defs>
+      <circle cx="50" cy="70" r="40" fill="url(#grad1)" />
+      <circle cx="50" cy="50" r="40" fill="url(#grad2)" />
+    </svg>
+    */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E %3Cdefs%3E %3CradialGradient id='grad1' x1='0%25' x2='0%25' y1='0%25' y2='100%25'%3E %3Cstop offset='75%25' stop-color='black' /%3E %3Cstop offset='100%25' stop-color='black' stop-opacity='0' /%3E %3C/radialGradient%3E %3C/defs%3E %3Cdefs%3E %3CradialGradient id='grad2' cx='50%25' cy='40%25' r='90%25' fx='50%25' fy='50%25'%3E %3Cstop offset='0%25' stop-color='%23cc7333' /%3E %3Cstop offset='100%25' stop-color='black' /%3E %3C/radialGradient%3E %3C/defs%3E %3Ccircle cx='50' cy='70' r='40' fill='url(%23grad1)' /%3E %3Ccircle cx='50' cy='50' r='40' fill='url(%23grad2)' /%3E %3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+}

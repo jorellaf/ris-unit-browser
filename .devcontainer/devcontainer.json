@@ -1,0 +1,59 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "ris-unit-browser",
+  "name": "RIS Unit Browser",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8080, 9000],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.eol": "\n",
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.rulers": [88],
+        "python.analysis.typeCheckingMode": "standard",
+        "editor.editorConfig.enable": false,
+        "cSpell.language": "en-gb",
+        "cSpell.words": ["merc", "Merc", "descr", "jorellaf"],
+        "cSpell.ignorePaths": [
+          ".devcontainer/devcontainer.json",
+          "package-lock.json",
+          "node_modules",
+          "vscode-extension",
+          ".git/{info,lfs,logs,refs,objects}/**",
+          ".git/{index,*refs,*HEAD}",
+          ".vscode",
+          ".vscode-insiders"
+        ],
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.editorConfig.enable": true
+        },
+        "[json]": {
+          "editor.formatOnSave": false
+        },
+        "files.associations": {
+          "*.css": "tailwindcss"
+        }
+      },
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "charliermarsh.ruff",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "mikestead.dotenv",
+        "ms-azuretools.vscode-docker",
+        "ms-python.mypy-type-checker",
+        "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker",
+        "mhutchie.git-graph"
+      ]
+    }
+  },
+  "postCreateCommand": "run_installs",
+  "remoteUser": "vscode"
+}

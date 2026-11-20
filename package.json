@@ -1,0 +1,52 @@
+{
+	"name": "ris-unit-browser",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Unit browser for RTR: Imperium Surrectum",
+	"author": "jorellaf",
+	"license": "GPL-3.0-only",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop -H 0.0.0.0 -p 8080",
+		"start": "gatsby develop -H 0.0.0.0 -p 8080",
+		"build": "gatsby build",
+		"serve": "gatsby serve -H 0.0.0.0 -p 9000",
+		"clean": "gatsby clean",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@tailwindcss/postcss": "^4.2.2",
+		"autoprefixer": "^10.5.0",
+		"baseline-browser-mapping": "^2.11.39",
+		"caniuse-lite": "^1.0.30001826",
+		"gatsby": "^5.16.1",
+		"gatsby-plugin-image": "^3.16.0",
+		"gatsby-plugin-manifest": "^5.16.0",
+		"gatsby-plugin-postcss": "^6.16.0",
+		"gatsby-plugin-sharp": "^5.16.0",
+		"gatsby-source-filesystem": "^5.16.0",
+		"gatsby-transformer-json": "^5.16.0",
+		"gatsby-transformer-sharp": "^5.16.0",
+		"postcss": "^8.5.9",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwindcss": "^4.2.2"
+	},
+	"devDependencies": {
+		"@types/node": "^25.6.0",
+		"@types/react": "^18.2.55",
+		"@types/react-dom": "^18.2.19",
+		"prettier": "^3.8.2",
+		"prettier-plugin-tailwindcss": "^0.8.0",
+		"typescript": "^6.0.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jorellaf/ris-unit-browser"
+	},
+	"bugs": {
+		"url": "https://github.com/jorellaf/ris-unit-browser/issues"
+	}
+}
